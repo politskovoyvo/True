@@ -59,7 +59,7 @@
                 <Button x:Name="ButtonFirst" Command="{Binding Comm}"
                     Width="150" Height="30">Моя страница</Button>
                 <Button Height="{Binding ElementName=ButtonFirst, Path=Height}"
-                    Width= "{Binding ElementName=ButtonFirst, Path=Width}" >
+                    Width= "{Binding ElementName=ButtonFirst, Path=Width}" Command="{Binding TaskCommand}">
                     Задачи</Button>
                 <Button Height="{Binding ElementName=ButtonFirst, Path=Height}" 
                     Width= "{Binding ElementName=ButtonFirst, Path=Width}" >

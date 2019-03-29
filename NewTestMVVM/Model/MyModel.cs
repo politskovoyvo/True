@@ -31,6 +31,7 @@ namespace NewTestMVVM.Model
         }
         #endregion
 
+   
         private object _mycontentcontroll; 
         public object MyContentControll
         {
@@ -44,9 +45,15 @@ namespace NewTestMVVM.Model
 
         public void AddMetod(object i)
         {
-
             MyContentControll = new PersonViewModel();
             //MessageBox.Show("Window");
         }
+
+        public void TaskMetod(object j)
+        {
+            MyContentControll = new TaskViewModel();
+        }
+
+
     }
 }
