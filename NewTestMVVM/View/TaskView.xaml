@@ -5,9 +5,9 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:NewTestMVVM.View"
       mc:Ignorable="d" 
-      xmlns:vm="clr-namespace:NewTestMVVM.ViewModel" d:DesignWidth="847" d:DesignHeight="476.438">
+      xmlns:vm="clr-namespace:NewTestMVVM.ViewModel"> 
 
     <Grid>
-        <Image Source = "/Resources/apple.jpg"/>
+        <Image Source="/Resources/apple.jpg" Height="1000" Width="2000"/>
     </Grid>
 </UserControl>
