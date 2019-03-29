@@ -35,16 +35,13 @@ namespace NewTestMVVM.ViewModel
         {
             ModelElement = new Model.MyModel(); 
 
-            Comm = new Command(ModelElement.TaskMetod);
+            Comm = new Command(ModelElement.AddMetod);
             TaskCommand = new Command(ModelElement.TaskMetod);
         }
 
         public Command Comm { get; set; }
-
         public Command TaskCommand { get; set; }
-
         public Model.MyModel ModelElement { get; set; }
         #endregion
-
     }
 }
