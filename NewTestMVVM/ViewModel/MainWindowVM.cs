@@ -36,6 +36,7 @@ namespace NewTestMVVM.ViewModel
             ModelElement = new Model.MyModel(); 
 
             Comm = new Command(ModelElement.AddMetod);
+            TaskCommand = new Command(ModelElement1.AddMetod);
         }
 
         public Command Comm { get; set; }
@@ -45,12 +46,7 @@ namespace NewTestMVVM.ViewModel
 
 
         #region TaskViewModel
-        public TaskViewModel()
-        {
-            ModelElement1 = new Model.MyModel();
 
-            TaskCommand = new Command(ModelElement1.AddMetod);
-        }
 
 
         public Command TaskCommand { get; set; }

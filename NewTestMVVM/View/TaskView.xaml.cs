@@ -18,9 +18,9 @@ namespace NewTestMVVM.View
     /// <summary>
     /// Логика взаимодействия для PersonsView.xaml
     /// </summary>
-    public partial class PersonsView 
+    public partial class TaskView 
     {
-        public PersonsView()
+        public TaskView()
         {
             InitializeComponent();
         }
