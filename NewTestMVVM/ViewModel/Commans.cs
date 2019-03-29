@@ -19,7 +19,6 @@ namespace NewTestMVVM.ViewModel
         }
 
         public event EventHandler CanExecuteChanged
-
         {
             add { CommandManager.RequerySuggested += value; }
             remove { CommandManager.RequerySuggested -= value; }
@@ -31,7 +30,6 @@ namespace NewTestMVVM.ViewModel
         }
 
         public void Execute(object parameter)
-
         {
             this.action(parameter);
         }
