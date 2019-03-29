@@ -35,7 +35,7 @@ namespace NewTestMVVM.ViewModel
         {
             ModelElement = new Model.MyModel(); 
 
-            Comm = new Command(ModelElement.TaskMetod);
+            Comm = new Command(ModelElement.AddMetod);
             TaskCommand = new Command(ModelElement.TaskMetod);
         }
 
