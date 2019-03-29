@@ -21,6 +21,7 @@
             <Setter Property="Background" Value="Blue"/>
             <Setter Property="Foreground" Value="Red"/>
         </Style>
+        
         <DataTemplate DataType="{x:Type vm:PersonViewModel}">
             <views:PersonsView></views:PersonsView>
         </DataTemplate>
