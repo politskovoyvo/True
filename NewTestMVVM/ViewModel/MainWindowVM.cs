@@ -30,6 +30,7 @@ namespace NewTestMVVM.ViewModel
         }
         #endregion
 
+        #region MainWindowVM
         public MainWindowVM()
         {
             ModelElement = new Model.MyModel(); 
@@ -37,12 +38,25 @@ namespace NewTestMVVM.ViewModel
             Comm = new Command(ModelElement.AddMetod);
         }
 
-
         public Command Comm { get; set; }
 
         public Model.MyModel ModelElement { get; set; }
+        #endregion
 
-        
 
+        #region TaskViewModel
+        public TaskViewModel()
+        {
+            ModelElement1 = new Model.MyModel();
+
+            TaskCommand = new Command(ModelElement1.AddMetod);
+        }
+
+
+        public Command TaskCommand { get; set; }
+
+        public Model.MyModel ModelElement1 { get; set; }
+
+        #endregion
     }
 }
