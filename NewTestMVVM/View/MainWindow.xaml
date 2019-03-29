@@ -78,10 +78,10 @@
                     Помощь</Button>
             </WrapPanel>
 
-            <StackPanel Height="200" Width="400"  Grid.Column="1">
+            <Grid  Grid.Column="1">
                 <ContentControl x:Name="mycontroll" 
                                 Content="{Binding ModelElement.MyContentControll}"/>
-            </StackPanel>
+            </Grid>
         </Grid>
     </Grid>
 
