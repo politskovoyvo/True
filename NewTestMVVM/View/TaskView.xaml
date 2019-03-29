@@ -7,6 +7,6 @@
       mc:Ignorable="d" 
       xmlns:vm="clr-namespace:NewTestMVVM.ViewModel">
     <Grid>
-        <Image Source="/Resources/apple.jpg"></Image>
+        <Image Source="/Resources/apple.jpg"></Image> 
     </Grid>
 </UserControl>
