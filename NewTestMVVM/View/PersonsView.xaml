@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:NewTestMVVM.View"
       mc:Ignorable="d" 
       
-        xmlns:vm="clr-namespace:NewTestMVVM.ViewModel">
+      xmlns:vm="clr-namespace:NewTestMVVM.ViewModel">
 
     <Grid>
         <Grid.ColumnDefinitions>
