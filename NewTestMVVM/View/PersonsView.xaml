@@ -13,7 +13,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button Height="300" Width="400" Grid.Column="0" Background="Black"/>
-        <Button Height="300" Width="400" Grid.Column="1" Background="Red"/>
+        <Button  Grid.Column="0" Background="Black"/>
+        <Button  Grid.Column="1" Background="Red"/>
     </Grid>
 </UserControl>
