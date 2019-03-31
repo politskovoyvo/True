@@ -12,26 +12,8 @@ using NewTestMVVM.ViewModel;
 
 namespace NewTestMVVM.Model
 {
-    public class MyModel : INotifyPropertyChanged
+    public class MyModel : BaseClassElement
     {
-        #region BaseProperty
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected void RaisePropertyChanged(string propertyName)
-        {
-            if (string.IsNullOrWhiteSpace(propertyName))
-            {
-                return;
-            }
-
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
-        #endregion
-
-   
         private object _mycontentcontroll; 
         public object MyContentControll
         {
@@ -46,14 +28,11 @@ namespace NewTestMVVM.Model
         public void AddMetod(object i)
         {
             MyContentControll = new PersonViewModel();
-            //MessageBox.Show("Window");
         }
 
         public void TaskMetod(object j)
         {
             MyContentControll = new TaskViewModel();
         }
-
-
     }
 }

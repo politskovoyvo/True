@@ -8,6 +8,6 @@ namespace NewTestMVVM.ViewModel
 {
     public class TaskViewModel
     {
-
+        
     }
 }

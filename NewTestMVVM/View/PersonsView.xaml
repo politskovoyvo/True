@@ -5,15 +5,39 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:NewTestMVVM.View"
       mc:Ignorable="d" 
-      
-      xmlns:vm="clr-namespace:NewTestMVVM.ViewModel">
+      xmlns:vm="clr-namespace:NewTestMVVM.ViewModel"
+             Height="800" Width="1200">
 
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
-        <Button  Grid.Column="0" Background="Black"/>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Background="Yellow"/>
+            <StackPanel Grid.Row="1">
+                <TextBlock HorizontalAlignment="Center" 
+                    Margin="5" x:Name="name">Полицковой</TextBlock>
+                <TextBlock HorizontalAlignment="Center"
+                    Margin="5" x:Name="fname">Владимир</TextBlock>
+                <TextBlock HorizontalAlignment="Center"
+                    Margin="5" x:Name="ffname">Олегович</TextBlock>
+                <Button Height="20"/>
+                <Button Height="20"/>
+                <Button Height="20"/>
+            </StackPanel>
+            
+        </Grid>
+        
         <Button  Grid.Column="1" Background="Red"/>
     </Grid>
 </UserControl>

@@ -11,17 +11,8 @@
     <Window.DataContext>
         <vm:MainWindowVM/>
     </Window.DataContext>
-
     <Window.Resources>
-        <Style TargetType="Button">
-            <Setter Property="Background" Value="Black"></Setter>
-            <Setter Property="Foreground" Value="White"></Setter>
-        </Style>
-        <Style TargetType="Button" x:Key="NameButtonBlack">
-            <Setter Property="Background" Value="Blue"/>
-            <Setter Property="Foreground" Value="Red"/>
-        </Style>
-        
+
         <DataTemplate DataType="{x:Type vm:PersonViewModel}">
             <views:PersonsView></views:PersonsView>
         </DataTemplate>
@@ -60,24 +51,12 @@
             </Grid.ColumnDefinitions>
 
             <WrapPanel  Orientation="Vertical">
-                
+
                 <Button x:Name="ButtonFirst" Command="{Binding Comm}"
-                    Width="150" Height="30">
-                    <Button.Content>
-                        <TextBlock>Сотрудники</TextBlock>
-                    </Button.Content>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Grid Name ="newButton">
-                                <Ellipse Fill="Black" Stroke="Bisque">
-                                    
-                                </Ellipse>
-                            </Grid>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-                
-                <Button Height="{Binding ElementName=ButtonFirst, Path=Height}"
+                    Width="150" Height="30">Личная страница</Button>
+
+                <Button Style="{StaticResource Black_Button}"  
+                    Height="{Binding ElementName=ButtonFirst, Path=Height}"
                     Width= "{Binding ElementName=ButtonFirst, Path=Width}" Command="{Binding TaskCommand}">
                     Задачи</Button>
                 <Button Height="{Binding ElementName=ButtonFirst, Path=Height}" 
