@@ -12,16 +12,7 @@
         <vm:MainWindowVM/>
     </Window.DataContext>
 
-    <Window.Resources>
-        <Style TargetType="Button">
-            <Setter Property="Background" Value="Black"></Setter>
-            <Setter Property="Foreground" Value="White"></Setter>
-        </Style>
-        <Style TargetType="Button" x:Key="NameButtonBlack">
-            <Setter Property="Background" Value="Blue"/>
-            <Setter Property="Foreground" Value="Red"/>
-        </Style>
-        
+    <Window.Resources>         
         <DataTemplate DataType="{x:Type vm:PersonViewModel}">
             <views:PersonsView></views:PersonsView>
         </DataTemplate>
