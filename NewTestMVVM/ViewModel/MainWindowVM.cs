@@ -33,7 +33,7 @@ namespace NewTestMVVM.ViewModel
         #region MainWindowVM
         public MainWindowVM()
         {
-            ModelElement = new Model.MyModel(); 
+            ModelElement = new Model.MyModel();
 
             Comm = new Command(ModelElement.AddMetod);
             TaskCommand = new Command(ModelElement.TaskMetod); 

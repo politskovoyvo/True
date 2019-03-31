@@ -51,8 +51,23 @@
             </Grid.ColumnDefinitions>
 
             <WrapPanel  Orientation="Vertical">
+                
                 <Button x:Name="ButtonFirst" Command="{Binding Comm}"
-                    Width="150" Height="30">Моя страница</Button>
+                    Width="150" Height="30">
+                    <Button.Content>
+                        <TextBlock>Сотрудники</TextBlock>
+                    </Button.Content>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Grid Name ="newButton">
+                                <Ellipse Fill="Black" Stroke="Bisque">
+                                    
+                                </Ellipse>
+                            </Grid>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                
                 <Button Height="{Binding ElementName=ButtonFirst, Path=Height}"
                     Width= "{Binding ElementName=ButtonFirst, Path=Width}" Command="{Binding TaskCommand}">
                     Задачи</Button>
