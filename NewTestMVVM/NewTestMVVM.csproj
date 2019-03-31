@@ -64,7 +64,15 @@
     <Compile Include="View\PersonsView.xaml.cs">
       <DependentUpon>PersonsView.xaml</DependentUpon>
     </Compile>
+    <Page Include="Themes\MyTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Themes\TestTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\TestTheme3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
