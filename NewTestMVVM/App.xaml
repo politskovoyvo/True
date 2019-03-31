@@ -4,6 +4,10 @@
              xmlns:local="clr-namespace:NewTestMVVM"
              StartupUri="View\MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/NewTestMVVM;component/Themes/TestTheme2.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
