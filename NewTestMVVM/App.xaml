@@ -6,7 +6,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/NewTestMVVM;component/Themes/MyTheme.xaml"/>
+                <ResourceDictionary Source="/NewTestMVVM;component/Themes/TestTheme3.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

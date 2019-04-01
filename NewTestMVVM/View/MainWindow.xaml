@@ -7,17 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         xmlns:vm="clr-namespace:NewTestMVVM.ViewModel" WindowState="Maximized" 
-        xmlns:views="clr-namespace:NewTestMVVM.View">
+        xmlns:views="clr-namespace:NewTestMVVM.View" >
+        
     <Window.DataContext>
         <vm:MainWindowVM/>
     </Window.DataContext>
 
     <Window.Resources>         
         <DataTemplate DataType="{x:Type vm:PersonViewModel}">
-            <views:PersonsView></views:PersonsView>
+            <views:PersonsView/>
         </DataTemplate>
         <DataTemplate DataType="{x:Type vm:TaskViewModel}">
-            <views:TaskView></views:TaskView>
+            <views:TaskView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:VisualWorkViewModel}">
+            <views:VusialWork/>
         </DataTemplate>
     </Window.Resources>
 
@@ -51,28 +55,17 @@
             </Grid.ColumnDefinitions>
 
             <WrapPanel  Orientation="Vertical">
-                
+
                 <Button x:Name="ButtonFirst" Command="{Binding Comm}"
-                    Width="150" Height="30">
-                    <Button.Content>
-                        <TextBlock>Сотрудники</TextBlock>
-                    </Button.Content>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Grid Name ="newButton">
-                                <Ellipse Fill="Black" Stroke="Bisque">
-                                    
-                                </Ellipse>
-                            </Grid>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+                    Width="150" Height="30"> Моя страница </Button>
                 
                 <Button Height="{Binding ElementName=ButtonFirst, Path=Height}"
-                    Width= "{Binding ElementName=ButtonFirst, Path=Width}" Command="{Binding TaskCommand}">
+                    Width= "{Binding ElementName=ButtonFirst, Path=Width}" 
+                        Command="{Binding TaskCommand}">
                     Задачи</Button>
                 <Button Height="{Binding ElementName=ButtonFirst, Path=Height}" 
-                    Width= "{Binding ElementName=ButtonFirst, Path=Width}" >
+                    Width= "{Binding ElementName=ButtonFirst, Path=Width}" 
+                        Command="{Binding AddVisualCommand}">
                     График работ</Button>
                 <Button Height="{Binding ElementName=ButtonFirst, Path=Height}" 
                     Width= "{Binding ElementName=ButtonFirst, Path=Width}" >

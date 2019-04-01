@@ -9,39 +9,27 @@ using System.Windows;
 using System.Collections.ObjectModel;
 using System.Windows.Controls;
 
+
 namespace NewTestMVVM.ViewModel
 {
-    class MainWindowVM : INotifyPropertyChanged
+    class MainWindowVM : NewTestMVVM.Model.BaseClassElement
     {
-        #region BaseProperty
-        public event PropertyChangedEventHandler PropertyChanged;
 
-        protected void RaisePropertyChanged(string propertyName)
-        {
-            if (string.IsNullOrWhiteSpace(propertyName))
-            {
-                return;
-            }
-
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
-        #endregion
-
-        #region MainWindowVM
         public MainWindowVM()
         {
             ModelElement = new Model.MyModel();
 
-            Comm = new Command(ModelElement.AddMetod);
-            TaskCommand = new Command(ModelElement.TaskMetod); 
+            Comm = new Command(ModelElement.AddMetod);                      //Window 1
+            TaskCommand = new Command(ModelElement.TaskMetod);              //Window 2
+            AddVisualCommand = new Command(ModelElement.AddVisualView);     //Window 3
+
         }
 
         public Command Comm { get; set; }
         public Command TaskCommand { get; set; }
+        public Command AddVisualCommand { get; set; }
         public Model.MyModel ModelElement { get; set; }
-        #endregion
+
+       
     }
 }

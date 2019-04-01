@@ -33,6 +33,11 @@ namespace NewTestMVVM.Model
         public void TaskMetod(object j)
         {
             MyContentControll = new TaskViewModel();
+
+        }
+        public void AddVisualView(object j)
+        {
+            MyContentControll = new VisualWorkViewModel();
         }
     }
 }
