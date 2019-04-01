@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NewTestMVVM.ViewModel
 {
-    public class TaskViewModel
+    public class VisualWorkViewModel
     {
         
     }

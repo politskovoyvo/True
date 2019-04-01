@@ -6,12 +6,24 @@
         <Setter Property="Foreground" Value="Red" />
         <Setter Property="Template" Value="{DynamicResource MenuButtonTemplate}" />
     </Style>
+    
+    <Style TargetType="{x:Type Button}" BasedOn="{x:Null}" x:Key="GreenButton">
+        <Setter Property="Foreground" Value="Green" />
+        <Setter Property="Template" Value="{DynamicResource MenuButtonTemplate2}" />
+    </Style>
+
 
     <ControlTemplate x:Key="MenuButtonTemplate" TargetType="{x:Type Button}">
         <Grid x:Name="Grid">
             <ContentPresenter x:Name="contentPresenter" Cursor="Hand" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" 
                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
                               Margin="{TemplateBinding Padding}" />
+            
         </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="MenuButtonTemplate2" TargetType="{x:Type Button}">
+        <Border CornerRadius="30" TextBlock.Foreground="Black" BorderThickness="1" x:Name="button2" >
+        </Border>
     </ControlTemplate>
 </ResourceDictionary>
