@@ -65,6 +65,7 @@
     </ApplicationDefinition>
     <Compile Include="Model\BaseClassElement.cs" />
     <Compile Include="Model\Person.cs" />
+    <Compile Include="ViewModel\FirstViewModel.cs" />
     <Compile Include="ViewModel\VisualWorkViewModel.cs" />
     <Compile Include="ViewModel\TaskViewModel.cs" />
     <Compile Include="ViewModel\PersonViewModel.cs" />

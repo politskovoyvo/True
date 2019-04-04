@@ -6,7 +6,12 @@
       xmlns:local="clr-namespace:NewTestMVVM.View"
       mc:Ignorable="d" 
       xmlns:vm="clr-namespace:NewTestMVVM.ViewModel"
-             Width="300" Height="200">
+      xmlns:views="clr-namespace:NewTestMVVM.View"
+      Width="300" Height="200">
+    <Window.DataContext>
+        <vm:MainWindowVM/>
+    </Window.DataContext>
+    
     
     <Grid>
         <Grid.ColumnDefinitions>

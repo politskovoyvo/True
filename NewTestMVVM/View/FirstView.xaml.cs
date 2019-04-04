@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using NewTestMVVM.Model;
+using NewTestMVVM.ViewModel;
 
 namespace NewTestMVVM.View
 {
@@ -24,5 +26,6 @@ namespace NewTestMVVM.View
         {
             InitializeComponent();
         }
+        
     }
 }
