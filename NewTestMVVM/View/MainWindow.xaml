@@ -23,9 +23,7 @@
         <DataTemplate DataType="{x:Type vm:VisualWorkViewModel}">
             <views:VusialWork/>
         </DataTemplate>
-        <DataTemplate DataType="{x:Type vm:FirstViewModel}">
-            <views:FirstView/>
-        </DataTemplate>
+       
     </Window.Resources>
 
     <Grid>

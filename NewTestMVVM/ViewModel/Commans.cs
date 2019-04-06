@@ -7,7 +7,7 @@ using System.Windows.Input;
 
 namespace NewTestMVVM.ViewModel
 {
-    class Command : ICommand
+    public class Command : ICommand
     { 
         private Action<object> action;
         private Func<object, bool> func;

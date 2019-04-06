@@ -30,9 +30,7 @@ namespace NewTestMVVM.ViewModel
         public Command AddVisualCommand { get; set; }
         public Model.MyModel ModelElement { get; set; }
 
-        //панель для авторизации первого окна. Login Pass... 
-        public Command EnterLoginCommand { get; set; }
-        public Command NewLoginCommand { get; set; }
+
 
 
     }
