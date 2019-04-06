@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Input;
 using NewTestMVVM.Model; 
 
 namespace NewTestMVVM.ViewModel
@@ -28,8 +29,8 @@ namespace NewTestMVVM.ViewModel
         {
             return !string.IsNullOrEmpty(_textlogin) && !string.IsNullOrEmpty(_textpassword); 
         }
-        private Command _newlogin; 
-        public Command LoginCommand
+        private ICommand _newlogin; 
+        public ICommand LoginCommand
         {
             get => _newlogin;
             set
