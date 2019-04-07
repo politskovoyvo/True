@@ -11,7 +11,8 @@ namespace NewTestMVVM.ViewModel
     {
         public FirstRunViewModel ()
         {
-            NextView = new Command(AddObject);
+            CommandLoginIn = new Command(LoginIn);
+            NewLoginCommand = new Command(NewLoginAdd);
         }
         private object _contentfirst; 
         public object ContentFirstRun
@@ -24,11 +25,16 @@ namespace NewTestMVVM.ViewModel
             }
         }
 
-        private void AddObject (object i)
+        private void LoginIn (object i)
         {
             ContentFirstRun = new FirstViewModel(); 
         }
-        public Command NextView { get; set; } 
+        private void NewLoginAdd(object i)
+        {
+            ContentFirstRun = new NewLoginViewModel();
+        }
+        public Command CommandLoginIn { get; set; }
+        public Command NewLoginCommand{ get; set; }
     }
     
 }

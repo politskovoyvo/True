@@ -66,12 +66,16 @@
     <Compile Include="Model\BaseClassElement.cs" />
     <Compile Include="Model\Person.cs" />
     <Compile Include="ViewModel\FirstLoginWindow\FirstRunViewModel.cs" />
+    <Compile Include="ViewModel\FirstLoginWindow\NewLoginViewModel.cs" />
     <Compile Include="ViewModel\FirstLoginWindow\FirstViewModel.cs" />
     <Compile Include="ViewModel\VisualWorkViewModel.cs" />
     <Compile Include="ViewModel\TaskViewModel.cs" />
     <Compile Include="ViewModel\PersonViewModel.cs" />
     <Compile Include="View\FirstView\FirstRun.xaml.cs">
       <DependentUpon>FirstRun.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\FirstView\NewLoginView.xaml.cs">
+      <DependentUpon>NewLoginView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\FirstView\FirstView.xaml.cs">
       <DependentUpon>FirstView.xaml</DependentUpon>
@@ -100,6 +104,10 @@
     <Page Include="View\FirstView\FirstRun.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\FirstView\NewLoginView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
