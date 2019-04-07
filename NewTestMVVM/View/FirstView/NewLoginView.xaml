@@ -16,37 +16,44 @@
         <DockPanel Margin="-5,5,0,5">
             <TextBlock HorizontalAlignment="Left">Имя</TextBlock>
             <TextBox Width="150" 
-                     HorizontalAlignment="Right"/>
+                Text="{Binding NameProperty, UpdateSourceTrigger=PropertyChanged, 
+                Mode=TwoWay}" HorizontalAlignment="Right"/>
         </DockPanel>
         <DockPanel Margin="-5,5,0,5">
             <TextBlock HorizontalAlignment="Left">Фамилия</TextBlock>
             <TextBox Width="150" 
-                     HorizontalAlignment="Right"/>
+                Text="{Binding FNameProperty, UpdateSourceTrigger=PropertyChanged, 
+                Mode=TwoWay}" HorizontalAlignment="Right"/>
         </DockPanel>
         <DockPanel Margin="-5,5,0,5">
             <TextBlock HorizontalAlignment="Left">Должность</TextBlock>
             <TextBox Width="150" 
-                     HorizontalAlignment="Right"/>
+                Text="{Binding Profession, UpdateSourceTrigger=PropertyChanged, 
+                Mode=TwoWay}" HorizontalAlignment="Right"/>
         </DockPanel>
         <DockPanel Margin="-5,5,0,5">
             <TextBlock HorizontalAlignment="Left">ЛОгин</TextBlock>
             <TextBox Width="150" 
-                     HorizontalAlignment="Right"/>
+                Text="{Binding LoginProperty, UpdateSourceTrigger=PropertyChanged, 
+                Mode=TwoWay}" HorizontalAlignment="Right"/>
         </DockPanel>
         <DockPanel Margin="-5,5,0,5">
             <TextBlock HorizontalAlignment="Left">Пароль</TextBlock>
             <TextBox Width="150" 
-                     HorizontalAlignment="Right"/>
+                Text="{Binding PasswordProrerty, UpdateSourceTrigger=PropertyChanged, 
+                Mode=TwoWay}" HorizontalAlignment="Right"/>
         </DockPanel>
         <DockPanel Margin="-5,5,0,5">
             <TextBlock HorizontalAlignment="Left">Повторите пароль</TextBlock>
             <TextBox Width="150" 
-                     HorizontalAlignment="Right"/>
+                Text="{Binding RepeatePassword, UpdateSourceTrigger=PropertyChanged, 
+                Mode=TwoWay}" HorizontalAlignment="Right"/>
         </DockPanel>
         <DockPanel Margin="-5,5,0,5">
             <TextBlock HorizontalAlignment="Left">EMail </TextBlock>
             <TextBox Width="150" 
-                     HorizontalAlignment="Right"/>
+                Text="{Binding EmailProperty, UpdateSourceTrigger=PropertyChanged, 
+                Mode=TwoWay}" HorizontalAlignment="Right"/>
         </DockPanel>
         <Button HorizontalAlignment="Right" Height="20">Готово</Button>
     </StackPanel>
