@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:NewTestMVVM"
              xmlns:views="clr-namespace:NewTestMVVM.View"
-             xmlns:vm="clr-namespace:NewTestMVVM.ViewModel"
-             StartupUri="View\FirstView.xaml">
+             xmlns:vm="clr-namespace:NewTestMVVM.ViewModel"             
+             StartupUri="View\FirstView\FirstRun.xaml">
     <Application.Resources>
 
         <DataTemplate DataType="{x:Type vm:PersonViewModel}">
@@ -19,7 +19,10 @@
         <DataTemplate DataType="{x:Type vm:FirstViewModel}">
             <views:FirstView/>
         </DataTemplate>
-
+        <DataTemplate DataType="{x:Type vm:FirstRunViewModel}">
+            <views:FirstRun/>
+        </DataTemplate>
+        
         <ResourceDictionary x:Key="ThemesKey">
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/NewTestMVVM;component/Themes/TestTheme3.xaml"/>
