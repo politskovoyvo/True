@@ -7,12 +7,12 @@ using System.Windows.Input;
 
 namespace NewTestMVVM.ViewModel
 {
-    class Command : ICommand
+    public class Command : ICommand
     { 
         private Action<object> action;
         private Func<object, bool> func;
 
-        public Command(Action<object> action, Func<object, bool> func = null)
+        public Command(Action<object> action, Func<object, bool> func = null) 
         {
             this.action = action;
             this.func = func;

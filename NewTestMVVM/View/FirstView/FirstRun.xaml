@@ -1,0 +1,33 @@
+﻿<Window x:Class="NewTestMVVM.View.FirstRun"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewTestMVVM.View"
+        xmlns:vm ="clr-namespace:NewTestMVVM.ViewModel"
+        mc:Ignorable="d"
+        Title="5-Ti" Height="450" Width="500">
+    <Window.DataContext>
+        <vm:FirstRunViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Login In" Command="{Binding CommandLoginIn}"
+                Grid.Column="0" Height="30" Margin="5"/>
+            <Button Content="Registr"  Command="{Binding NewLoginCommand}"
+                Grid.Column="1" Height="30" Margin="5"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <ContentControl x:Name="content" 
+                Content="{Binding ContentFirstRun}"/>
+        </Grid>
+    </Grid>
+</Window>

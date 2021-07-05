@@ -2,9 +2,31 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:NewTestMVVM"
-             StartupUri="View\MainWindow.xaml">
+             xmlns:views="clr-namespace:NewTestMVVM.View"
+             xmlns:vm="clr-namespace:NewTestMVVM.ViewModel"             
+             StartupUri="View\FirstView\FirstRun.xaml">
     <Application.Resources>
-        <ResourceDictionary>
+
+        <DataTemplate DataType="{x:Type vm:PersonViewModel}">
+            <views:PersonsView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:TaskViewModel}">
+            <views:TaskView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:VisualWorkViewModel}">
+            <views:VusialWork/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:FirstViewModel}">
+            <views:FirstView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:FirstRunViewModel}">
+            <views:FirstRun/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:NewLoginViewModel}">
+            <views:NewLoginView/>
+        </DataTemplate>
+        
+        <ResourceDictionary x:Key="ThemesKey">
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/NewTestMVVM;component/Themes/TestTheme3.xaml"/>
             </ResourceDictionary.MergedDictionaries>

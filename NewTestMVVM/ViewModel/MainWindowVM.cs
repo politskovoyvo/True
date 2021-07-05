@@ -24,12 +24,14 @@ namespace NewTestMVVM.ViewModel
             AddVisualCommand = new Command(ModelElement.AddVisualView);     //Window 3
 
         }
-
+            
         public Command Comm { get; set; }
         public Command TaskCommand { get; set; }
         public Command AddVisualCommand { get; set; }
         public Model.MyModel ModelElement { get; set; }
 
-       
+
+
+
     }
 }
